@@ -4,6 +4,7 @@ Monthly Interest
 Create a program that will allow for certain inputs and output a monthly interest charge
 I certify that this is my own work.
 """
+
 def monthly_interest():
     annual_rate= eval(input("What is the annual interest rate?"))
     # represents the percentage of the annual interest rate
