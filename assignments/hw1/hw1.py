@@ -50,5 +50,4 @@ def kilometers_to_miles():
     print("That's",miles,"miles!",end="\n")
 kilometers_to_miles()
 
-if __name__ == '__main__':
-    pass
+
