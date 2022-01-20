@@ -49,5 +49,3 @@ def kilometers_to_miles():
     # represents the conversion equation
     print("That's",miles,"miles!",end="\n")
 kilometers_to_miles()
-
-
