@@ -7,7 +7,6 @@ computing the mean (root mean square, harmonic mean, geometric mean).
 I certify that this is my own work.
 """
 
-
 def means():
     mean_value= int(input("Enter the values to be entered?"))
     # represents the value "n" in equation
