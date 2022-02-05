@@ -60,7 +60,7 @@ def pi():
         right= (2 * i)/(2 *i +1)
         pi_acc= pi_acc * left * right
     print(pi_acc)
-
+pi()
 
 if __name__ == '__main__':
     pass
