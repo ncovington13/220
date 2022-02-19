@@ -3,7 +3,6 @@ Nia Covington
 ElementaryStrings.py
 Create a program that uses strings and list with techniques of indexing and slicing.
 I certify that this assignment is entirely my own work.
-
 """
 
 
