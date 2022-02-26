@@ -1,42 +1,62 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Nia Covington
+stringformatting.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 
-Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
+import math
 
-
+from math import *
 def cash_converter():
-    pass
-
+    user_input=eval(input("enter an integer:"))
+    print("that is ${:.2f}".format(user_input))
 
 def encode():
-    pass
-
+    message=input("Enter a message:")
+    key=eval(input("Enter a key:"))
+    answer="".join(chr(ord(c)+ key) for c in message)
+    print(answer)
 
 def sphere_area(radius):
-    pass
-
+    area= float(4 * math.pi * (radius)**2)
+    return area
 
 def sphere_volume(radius):
-    pass
-
+    volume= float((4/3) * math.pi *(radius)**3)
+    return volume
 
 def sum_n(number):
-    pass
-
+    sum=0
+    for i in range(1,number+1):
+        sum+= i
+    return sum
 
 def sum_n_cubes(number):
-    pass
+    cubes_sum=0
+    for i in range (1,number+1):
+        cubes_sum+=(i**3)
+    return cubes_sum
 
 
 def encode_better():
-    pass
+    user_message=input("Enter a word:")
+    user_key=input("Enter a key:")
+    shift_list=[]
+    chr_list=[]
+
+    answer=""
+    # answer will print as a string rather than a list
+    for keys in user_key:
+        shift_list.append(keys)
+    for ch in user_message:
+        chr_list.append(ch)
+
+    for i in range(len(user_message)):
+        shift= (ord(shift_list [i % len(shift_list)])-65) % 58
+        answer += chr((ord(chr_list[i])+ shift -58))
+    print(answer)
 
 
 if __name__ == '__main__':
