@@ -9,7 +9,7 @@ from graphics import *
 class Door:
     def __init__(self,shape,label):
         self.shape=shape
-        door_position=shape.getCenter
+        door_position=shape.getCenter()
         self.text=Text(door_position,label)
         self.secret=False
     def get_label(self):
